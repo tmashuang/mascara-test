@@ -1,0 +1,20 @@
+{
+  "name": "mascara-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmashuang/mascara-test.git"
+  },
+  "author": "tmashuang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmashuang/mascara-test/issues"
+  },
+  "homepage": "https://github.com/tmashuang/mascara-test#readme"
+}
