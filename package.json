@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "beefy index.js:bundle.js --live --open --index=./index.html --cwd ./",
     "build": "browserify index.js -o bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,10 +12,28 @@
     "type": "git",
     "url": "git+https://github.com/tmashuang/mascara-test.git"
   },
+  "plugins": [
+    "jsdom-quokka-plugin"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "author": "tmashuang",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/tmashuang/mascara-test/issues"
   },
-  "homepage": "https://github.com/tmashuang/mascara-test#readme"
+  "homepage": "https://github.com/tmashuang/mascara-test#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "beefy": "^2.1.8",
+    "browserify": "^14.4.0",
+    "jsdom-quokka-plugin": "^1.0.6"
+  },
+  "dependencies": {
+    "ethjs": "^0.2.8",
+    "metamascara": "^1.3.1"
+  }
 }
